@@ -20,6 +20,12 @@ public class Shield {
                 .map(babyAgent -> new Agent(babyAgent[0], babyAgent[1]))
                 .collect(Collectors.toList());
 
+        /* alternative
+        List<Agent> agents = names.stream()
+                .map(name -> new Agent(name.split(" ")[0],name.split(" ")[1]))
+                .collect(Collectors.toList());
+                */
+
         showAgents(agents);
     }
 
